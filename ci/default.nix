@@ -11,7 +11,6 @@ let
       (../examples + "/${example}.nix")
       {
         documentation.enable = false;
-        services.nix-daemon.enable = true;
         nix-homebrew = {
           user = lib.mkForce "runner";
         };
